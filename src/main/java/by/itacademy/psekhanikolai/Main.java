@@ -11,5 +11,6 @@ public class Main {
         cities.add("Wien");
         cities.add("Rom");
         System.out.println(cities);
+        cities.set(2, "Basel");
     }
 }
