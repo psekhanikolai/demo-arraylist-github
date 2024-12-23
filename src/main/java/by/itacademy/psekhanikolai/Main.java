@@ -12,5 +12,13 @@ public class Main {
         cities.add("Rom");
         System.out.println(cities);
         cities.set(2, "Basel");
+        int maxLength = cities.get(0).length();
+        String cittyWithMax= cities.get(0);
+        for (String citty: cities){
+            if (citty.length()>maxLength){
+                maxLength= citty.length();
+            }
+        }
+        System.out.println(cittyWithMax);
     }
 }
