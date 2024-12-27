@@ -13,4 +13,16 @@ public class Util {
         }
         return cittyWithMax;
     }
+
+    static public String cittyWithMin(ArrayList<String> cities) {
+        int minLength = cities.get(0).length();
+        String cittyWithMin = cities.get(0);
+        for (String citty : cities) {
+            if (citty.length() < minLength) {
+                minLength = citty.length();
+            }
+        }
+        return cittyWithMin;
+    }
+
 }
