@@ -8,6 +8,7 @@ public class Util {
         String cittyWithMax = cities.get(0);
         for (String citty : cities) {
             if (citty.length() > maxLength) {
+                cittyWithMax = citty;
                 maxLength = citty.length();
             }
         }
@@ -19,6 +20,7 @@ public class Util {
         String cittyWithMin = cities.get(0);
         for (String citty : cities) {
             if (citty.length() < minLength) {
+                cittyWithMin = citty;
                 minLength = citty.length();
             }
         }
