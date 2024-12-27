@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<String> cities= new ArrayList<>();
+        ArrayList<String> cities = new ArrayList<>();
         cities.add("Gomel");
         cities.add("Brest");
         cities.add("Milan");
@@ -12,13 +12,9 @@ public class Main {
         cities.add("Rom");
         System.out.println(cities);
         cities.set(2, "Basel");
-        int maxLength = cities.get(0).length();
-        String cittyWithMax= cities.get(0);
-        for (String citty: cities){
-            if (citty.length()>maxLength){
-                maxLength= citty.length();
-            }
-        }
+        String cittyWithMax = Util.cittyWithMax(cities);
         System.out.println(cittyWithMax);
+        String cittyWithMin = Util.cittyWithMin(cities);
+        System.out.println(cittyWithMin);
     }
 }
